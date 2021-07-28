@@ -1,14 +1,36 @@
+<!-- dariodigulio@gmail.com -->
 <!DOCTYPE html>
 <html lang=”en”>
 <head>
     <meta charset=”UTF-8″ />
     <title>site1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body> 
-
+    <h1> 25Watts </h1>
+    
  <a href:"#" class="menu" id:"home">Home</a>
  <a href:"#" class="menu" id:"contact">Contact</a>
  <a href:"#" class="menu" id:"products">Products</a>
 
+ <form action="contacto.php" method="POST">
+
+    <label for="email">Usuario/Email (*)</label><br>
+    <input type="email" name="email" id="email" required><br><br>
+
+    <label for="password">Password (*)</label><br>
+    <input type="password" name="password" id="password" minlength="8" required><br><br>
+
+    <label for="edad">Edad (deber ser mayor de 18 años)</label><br><br>
+    <input type="date" name="edad" id="edad" max="2003-07-27" required><br><br>
+
+    <label for="checkbox">Mantener logueado</label><br>
+    <input type="checkbox" name="checkbox"><br><br>
+
+    <button type="submit">Enviar</button><br>
+
+</form>
+
+
 </body>
-</html>
+</html> 
